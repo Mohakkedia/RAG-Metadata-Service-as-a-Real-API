@@ -1,0 +1,6 @@
+work_order_id,line_id,equipment,issue,status,assigned_to,priority
+WO-4471,LINE-01,Induction Motor IM-750,Thermal overload trip during high-demand period,closed,J. Alvarez,medium
+WO-4472,LINE-03,Conveyor Motor Bearing CB-4400,Bearing replaced after elevated temperature and vibration alerts,closed,M. Kim,high
+WO-4473,LINE-04,Vibration/Temperature Sensor VS-100,Thermocouple failure causing false high-temperature alarm,closed,T. Osei,medium
+WO-4474,LINE-02,Belt Conveyor BC-2200,Gradual throughput decline suspected belt tension loss,open,J. Alvarez,low
+WO-4475,HP-900,Hydraulic Press HP-900,Erratic cycle pressure not reaching set point,open,M. Kim,high

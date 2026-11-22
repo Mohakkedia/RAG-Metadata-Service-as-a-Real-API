@@ -1,0 +1,9 @@
+[
+  {"timestamp": "2026-08-01T06:15:00Z", "line_id": "LINE-03", "event": "temperature_alert", "value_c": 87.2, "technician": "J. Alvarez"},
+  {"timestamp": "2026-08-01T06:20:00Z", "line_id": "LINE-03", "event": "vibration_alert", "value_mm_s": 1.4, "technician": "J. Alvarez"},
+  {"timestamp": "2026-08-01T07:00:00Z", "line_id": "LINE-03", "event": "maintenance_dispatched", "reason": "suspected bearing wear based on co-rising temperature and vibration", "technician": "M. Kim"},
+  {"timestamp": "2026-08-01T08:30:00Z", "line_id": "LINE-03", "event": "bearing_replaced", "downtime_minutes": 90, "technician": "M. Kim"},
+  {"timestamp": "2026-08-02T14:10:00Z", "line_id": "LINE-04", "event": "temperature_alert", "value_c": 140.0, "technician": "T. Osei"},
+  {"timestamp": "2026-08-02T14:15:00Z", "line_id": "LINE-04", "event": "sensor_inspection", "finding": "thermocouple connection failure, no gradual precursor trend observed", "technician": "T. Osei"},
+  {"timestamp": "2026-08-02T14:45:00Z", "line_id": "LINE-04", "event": "sensor_replaced", "downtime_minutes": 20, "technician": "T. Osei"}
+]

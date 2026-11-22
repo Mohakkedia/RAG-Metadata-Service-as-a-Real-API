@@ -1,0 +1,360 @@
+{
+  "ingestions": [
+    {
+      "type": "text",
+      "title": "Bearing Wear and Overheating \u2014 Diagnostic Guide",
+      "response": {
+        "doc_id": "doc_e13c43e7a5c8",
+        "n_chunks": 2,
+        "metadata": {
+          "doc_id": "doc_e13c43e7a5c8",
+          "source": "equipment-manuals",
+          "content_type": "text",
+          "title": "Bearing Wear and Overheating \u2014 Diagnostic Guide",
+          "tags": [
+            "bearing",
+            "manual",
+            "CB-4400"
+          ],
+          "ingested_at": "2026-09-20T19:25:24.277036+00:00",
+          "schema_version": "1.0.0",
+          "n_chunks": 2,
+          "char_count": 622,
+          "extra": {}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "title": "Distinguishing Sensor Fault from Real Equipment Fault",
+      "response": {
+        "doc_id": "doc_0f3642d7e6b9",
+        "n_chunks": 1,
+        "metadata": {
+          "doc_id": "doc_0f3642d7e6b9",
+          "source": "equipment-manuals",
+          "content_type": "text",
+          "title": "Distinguishing Sensor Fault from Real Equipment Fault",
+          "tags": [
+            "sensor",
+            "manual",
+            "VS-100"
+          ],
+          "ingested_at": "2026-09-20T19:25:24.282702+00:00",
+          "schema_version": "1.0.0",
+          "n_chunks": 1,
+          "char_count": 370,
+          "extra": {}
+        }
+      }
+    },
+    {
+      "type": "pdf",
+      "title": "HP-900 Maintenance Manual",
+      "response": {
+        "doc_id": "doc_291a57c3452f",
+        "n_chunks": 4,
+        "metadata": {
+          "doc_id": "doc_291a57c3452f",
+          "source": "equipment-manuals",
+          "content_type": "pdf",
+          "title": "HP-900 Maintenance Manual",
+          "tags": [
+            "hydraulic",
+            "manual",
+            "HP-900"
+          ],
+          "ingested_at": "2026-09-20T19:25:24.290819+00:00",
+          "schema_version": "1.0.0",
+          "n_chunks": 4,
+          "char_count": 1783,
+          "extra": {
+            "original_filename": "hydraulic_press_manual.pdf"
+          }
+        }
+      }
+    },
+    {
+      "type": "json_log",
+      "title": "August 2026 Maintenance Log",
+      "response": {
+        "doc_id": "doc_d9079f1f40fa",
+        "n_chunks": 3,
+        "metadata": {
+          "doc_id": "doc_d9079f1f40fa",
+          "source": "maintenance-logs",
+          "content_type": "json_log",
+          "title": "August 2026 Maintenance Log",
+          "tags": [
+            "log",
+            "august-2026"
+          ],
+          "ingested_at": "2026-09-20T19:25:24.295515+00:00",
+          "schema_version": "1.0.0",
+          "n_chunks": 3,
+          "char_count": 988,
+          "extra": {
+            "original_filename": "maintenance_logs.json"
+          }
+        }
+      }
+    },
+    {
+      "type": "csv",
+      "title": "Open/Closed Work Orders",
+      "response": {
+        "doc_id": "doc_503393839c96",
+        "n_chunks": 3,
+        "metadata": {
+          "doc_id": "doc_503393839c96",
+          "source": "work-orders",
+          "content_type": "csv",
+          "title": "Open/Closed Work Orders",
+          "tags": [
+            "work-order"
+          ],
+          "ingested_at": "2026-09-20T19:25:24.301494+00:00",
+          "schema_version": "1.0.0",
+          "n_chunks": 3,
+          "char_count": 1018,
+          "extra": {
+            "original_filename": "work_orders.csv"
+          }
+        }
+      }
+    }
+  ],
+  "searches": [
+    {
+      "request": {
+        "query": "bearing running hot with rising vibration",
+        "top_k": 3,
+        "response_format": "agent"
+      },
+      "response": {
+        "query": "bearing running hot with rising vibration",
+        "n_results": 3,
+        "results": [
+          {
+            "chunk_id": "chunk_e1a034a0dd01",
+            "doc_id": "doc_e13c43e7a5c8",
+            "doc_title": "Bearing Wear and Overheating \u2014 Diagnostic Guide",
+            "source": "equipment-manuals",
+            "content_type": "text",
+            "relevance_score": 0.2039,
+            "text": "Elevated bearing temperature combined with increased vibration amplitude is the classic signature of bearing wear or insufficient lubrication. Normal operating temperature for CB-4400 bearings is 60-75C with vibration under 1.0 mm/s RMS. Sustained readings above 85C accompanied by vibration exceeding 1.2 mm/s RMS indicate advanced bearing degradation. Root causes include grease starvation, contaminant ingress, misalignment, or end-of-life wear. Recommended action: schedule immediate inspection; ",
+            "citation": "[Bearing Wear and Overheating \u2014 Diagnostic Guide, equipment-manuals] chunk 0"
+          },
+          {
+            "chunk_id": "chunk_6148b04346e1",
+            "doc_id": "doc_503393839c96",
+            "doc_title": "Open/Closed Work Orders",
+            "source": "work-orders",
+            "content_type": "csv",
+            "relevance_score": 0.0825,
+            "text": "Row 0: work_order_id: WO-4471; line_id: LINE-01; equipment: Induction Motor IM-750; issue: Thermal overload trip during high-demand period; status: closed; assigned_to: J. Alvarez; priority: medium\n\nRow 1: work_order_id: WO-4472; line_id: LINE-03; equipment: Conveyor Motor Bearing CB-4400; issue: Bearing replaced after elevated temperature and vibration alerts; status: closed; assigned_to: M. Kim; priority: high",
+            "citation": "[Open/Closed Work Orders, work-orders] chunk 0"
+          },
+          {
+            "chunk_id": "chunk_73a048378793",
+            "doc_id": "doc_291a57c3452f",
+            "doc_title": "HP-900 Maintenance Manual",
+            "source": "equipment-manuals",
+            "content_type": "pdf",
+            "relevance_score": 0.0803,
+            "text": "Hydraulic Press HP-900 \u2014 Maintenance Manual\n1. Overview\nThe HP-900 hydraulic press is used for sheet metal forming operations across Lines 5 through 8. This\nmanual covers routine maintenance, troubleshooting of pressure loss and erratic cycling, and safety\nprocedures required before any physical inspection or repair.\n2. Pressure Loss Diagnosis\nErratic cycle times or inability to reach set pressure on the HP-900 is most commonly caused by\ninternal seal wear in the main cylinder. Look for slow pre",
+            "citation": "[HP-900 Maintenance Manual, equipment-manuals] chunk 0"
+          }
+        ],
+        "schema_version": "1.0.0"
+      }
+    },
+    {
+      "request": {
+        "query": "sudden temperature spike no gradual trend",
+        "top_k": 3,
+        "response_format": "agent"
+      },
+      "response": {
+        "query": "sudden temperature spike no gradual trend",
+        "n_results": 3,
+        "results": [
+          {
+            "chunk_id": "chunk_f9a79d6661a4",
+            "doc_id": "doc_0f3642d7e6b9",
+            "doc_title": "Distinguishing Sensor Fault from Real Equipment Fault",
+            "source": "equipment-manuals",
+            "content_type": "text",
+            "relevance_score": 0.199,
+            "text": "Before acting on an anomalous reading, rule out sensor fault: a genuine equipment problem produces a gradual trend over minutes to hours, while a sensor fault often produces a sudden step-change or a reading stuck at a fixed value. If a suspected fault reading has not shown a gradual precursor trend, sensor malfunction should be considered alongside equipment failure.",
+            "citation": "[Distinguishing Sensor Fault from Real Equipment Fault, equipment-manuals] chunk 0"
+          },
+          {
+            "chunk_id": "chunk_1cbcc47a19a7",
+            "doc_id": "doc_291a57c3452f",
+            "doc_title": "HP-900 Maintenance Manual",
+            "source": "equipment-manuals",
+            "content_type": "pdf",
+            "relevance_score": 0.1183,
+            "text": "st commonly caused by\ninternal seal wear in the main cylinder. Look for slow pressure bleed-down when the press is idle as the\nprimary diagnostic signal. A secondary cause is air entrainment in the hydraulic fluid, visible as foaming\nin the reservoir sight glass. A partially clogged filter increasing pump strain and heat is a third, less\ncommon cause.\n3. Fluid Temperature\nHydraulic fluid temperature above 60 degrees Celsius accelerates seal degradation and should be\ninvestigated as a contributin",
+            "citation": "[HP-900 Maintenance Manual, equipment-manuals] chunk 1"
+          },
+          {
+            "chunk_id": "chunk_68e0adb67715",
+            "doc_id": "doc_d9079f1f40fa",
+            "doc_title": "August 2026 Maintenance Log",
+            "source": "maintenance-logs",
+            "content_type": "json_log",
+            "relevance_score": 0.1111,
+            "text": "Log entry 3: timestamp=2026-08-01T08:30:00Z; line_id=LINE-03; event=bearing_replaced; downtime_minutes=90; technician=M. Kim\n\nLog entry 4: timestamp=2026-08-02T14:10:00Z; line_id=LINE-04; event=temperature_alert; value_c=140.0; technician=T. Osei\n\nLog entry 5: timestamp=2026-08-02T14:15:00Z; line_id=LINE-04; event=sensor_inspection; finding=thermocouple connection failure, no gradual precursor trend observed; technician=T. Osei",
+            "citation": "[August 2026 Maintenance Log, maintenance-logs] chunk 1"
+          }
+        ],
+        "schema_version": "1.0.0"
+      }
+    },
+    {
+      "request": {
+        "query": "hydraulic press losing pressure erratic cycling",
+        "top_k": 3,
+        "response_format": "human"
+      },
+      "response": {
+        "query": "hydraulic press losing pressure erratic cycling",
+        "n_results": 3,
+        "results": [
+          {
+            "chunk_id": "chunk_73a048378793",
+            "doc_id": "doc_291a57c3452f",
+            "doc_title": "HP-900 Maintenance Manual",
+            "source": "equipment-manuals",
+            "content_type": "pdf",
+            "relevance_score": 0.3148,
+            "text": "Hydraulic Press HP-900 \u2014 Maintenance Manual\n1. Overview\nThe HP-900 hydraulic press is used for sheet metal forming operations across Lines 5 through 8. This\nmanual covers routine maintenance, troubleshooting of pressure loss and erratic cycling, and safety\nprocedures required ...",
+            "citation": "[HP-900 Maintenance Manual, equipment-manuals] chunk 0"
+          },
+          {
+            "chunk_id": "chunk_8017d9312ecc",
+            "doc_id": "doc_503393839c96",
+            "doc_title": "Open/Closed Work Orders",
+            "source": "work-orders",
+            "content_type": "csv",
+            "relevance_score": 0.2748,
+            "text": "Row 4: work_order_id: WO-4475; line_id: HP-900; equipment: Hydraulic Press HP-900; issue: Erratic cycle pressure not reaching set point; status: open; assigned_to: M. Kim; priority: high",
+            "citation": "[Open/Closed Work Orders, work-orders] chunk 2"
+          },
+          {
+            "chunk_id": "chunk_1cbcc47a19a7",
+            "doc_id": "doc_291a57c3452f",
+            "doc_title": "HP-900 Maintenance Manual",
+            "source": "equipment-manuals",
+            "content_type": "pdf",
+            "relevance_score": 0.1338,
+            "text": "st commonly caused by\ninternal seal wear in the main cylinder. Look for slow pressure bleed-down when the press is idle as the\nprimary diagnostic signal. A secondary cause is air entrainment in the hydraulic fluid, visible as foaming\nin the reservoir sight glass. A partially c...",
+            "citation": "[HP-900 Maintenance Manual, equipment-manuals] chunk 1"
+          }
+        ],
+        "schema_version": "1.0.0"
+      }
+    },
+    {
+      "request": {
+        "query": "work orders for LINE-03",
+        "top_k": 3,
+        "response_format": "agent",
+        "filters": {
+          "source": "work-orders"
+        }
+      },
+      "response": {
+        "query": "work orders for LINE-03",
+        "n_results": 3,
+        "results": [
+          {
+            "chunk_id": "chunk_6148b04346e1",
+            "doc_id": "doc_503393839c96",
+            "doc_title": "Open/Closed Work Orders",
+            "source": "work-orders",
+            "content_type": "csv",
+            "relevance_score": 0.1559,
+            "text": "Row 0: work_order_id: WO-4471; line_id: LINE-01; equipment: Induction Motor IM-750; issue: Thermal overload trip during high-demand period; status: closed; assigned_to: J. Alvarez; priority: medium\n\nRow 1: work_order_id: WO-4472; line_id: LINE-03; equipment: Conveyor Motor Bearing CB-4400; issue: Bearing replaced after elevated temperature and vibration alerts; status: closed; assigned_to: M. Kim; priority: high",
+            "citation": "[Open/Closed Work Orders, work-orders] chunk 0"
+          },
+          {
+            "chunk_id": "chunk_2113f92b63f7",
+            "doc_id": "doc_503393839c96",
+            "doc_title": "Open/Closed Work Orders",
+            "source": "work-orders",
+            "content_type": "csv",
+            "relevance_score": 0.0619,
+            "text": "Row 2: work_order_id: WO-4473; line_id: LINE-04; equipment: Vibration/Temperature Sensor VS-100; issue: Thermocouple failure causing false high-temperature alarm; status: closed; assigned_to: T. Osei; priority: medium\n\nRow 3: work_order_id: WO-4474; line_id: LINE-02; equipment: Belt Conveyor BC-2200; issue: Gradual throughput decline suspected belt tension loss; status: open; assigned_to: J. Alvarez; priority: low",
+            "citation": "[Open/Closed Work Orders, work-orders] chunk 1"
+          },
+          {
+            "chunk_id": "chunk_8017d9312ecc",
+            "doc_id": "doc_503393839c96",
+            "doc_title": "Open/Closed Work Orders",
+            "source": "work-orders",
+            "content_type": "csv",
+            "relevance_score": 0.0492,
+            "text": "Row 4: work_order_id: WO-4475; line_id: HP-900; equipment: Hydraulic Press HP-900; issue: Erratic cycle pressure not reaching set point; status: open; assigned_to: M. Kim; priority: high",
+            "citation": "[Open/Closed Work Orders, work-orders] chunk 2"
+          }
+        ],
+        "schema_version": "1.0.0"
+      }
+    },
+    {
+      "request": {
+        "query": "sensor thermocouple failure false alarm",
+        "top_k": 3,
+        "response_format": "agent",
+        "filters": {
+          "source": "maintenance-logs"
+        }
+      },
+      "response": {
+        "query": "sensor thermocouple failure false alarm",
+        "n_results": 3,
+        "results": [
+          {
+            "chunk_id": "chunk_68e0adb67715",
+            "doc_id": "doc_d9079f1f40fa",
+            "doc_title": "August 2026 Maintenance Log",
+            "source": "maintenance-logs",
+            "content_type": "json_log",
+            "relevance_score": 0.1111,
+            "text": "Log entry 3: timestamp=2026-08-01T08:30:00Z; line_id=LINE-03; event=bearing_replaced; downtime_minutes=90; technician=M. Kim\n\nLog entry 4: timestamp=2026-08-02T14:10:00Z; line_id=LINE-04; event=temperature_alert; value_c=140.0; technician=T. Osei\n\nLog entry 5: timestamp=2026-08-02T14:15:00Z; line_id=LINE-04; event=sensor_inspection; finding=thermocouple connection failure, no gradual precursor trend observed; technician=T. Osei",
+            "citation": "[August 2026 Maintenance Log, maintenance-logs] chunk 1"
+          },
+          {
+            "chunk_id": "chunk_eec1d462c169",
+            "doc_id": "doc_d9079f1f40fa",
+            "doc_title": "August 2026 Maintenance Log",
+            "source": "maintenance-logs",
+            "content_type": "json_log",
+            "relevance_score": 0.0644,
+            "text": "Log entry 0: timestamp=2026-08-01T06:15:00Z; line_id=LINE-03; event=temperature_alert; value_c=87.2; technician=J. Alvarez\n\nLog entry 1: timestamp=2026-08-01T06:20:00Z; line_id=LINE-03; event=vibration_alert; value_mm_s=1.4; technician=J. Alvarez\n\nLog entry 2: timestamp=2026-08-01T07:00:00Z; line_id=LINE-03; event=maintenance_dispatched; reason=suspected bearing wear based on co-rising temperature and vibration; technician=M. Kim",
+            "citation": "[August 2026 Maintenance Log, maintenance-logs] chunk 0"
+          },
+          {
+            "chunk_id": "chunk_0ce75aca0bba",
+            "doc_id": "doc_d9079f1f40fa",
+            "doc_title": "August 2026 Maintenance Log",
+            "source": "maintenance-logs",
+            "content_type": "json_log",
+            "relevance_score": 0.058,
+            "text": "Log entry 6: timestamp=2026-08-02T14:45:00Z; line_id=LINE-04; event=sensor_replaced; downtime_minutes=20; technician=T. Osei",
+            "citation": "[August 2026 Maintenance Log, maintenance-logs] chunk 2"
+          }
+        ],
+        "schema_version": "1.0.0"
+      }
+    }
+  ],
+  "final_stats": {
+    "n_documents": 5,
+    "n_chunks": 13,
+    "schema_version": "1.0.0"
+  }
+}
